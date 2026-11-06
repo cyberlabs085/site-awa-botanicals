@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awa Botanicals • La puissance brute des terres sénégalaises pour votre peau.</title>
+  <meta name="description" content="Découvrez l'excellence du soin artisanal alliant la richesse du beurre de karité pur aux vertus régénératrices du baobab. Chaque produit est formulé avec passion au Sénégal pour révéler l'éclat naturel de votre beauté.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20256%20256%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%20aria-label%3D%22AWA%20BOTANICALS%20Symbol%20Transparent%22%3E%0A%20%20%3Ctitle%3EAWA%20BOTANICALS%20%E2%80%94%20Symbol%20Mark%20(Transparent)%3C%2Ftitle%3E%0A%20%20%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22brandGrad_f18oi8%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23D4AF37%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%234A7C59%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23047857%22%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22brandGrad_f18oi8_accent%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFFFFF%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23D4AF37%22%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%0A%20%20%3Cg%20id%3D%22symbol-mark%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22url(%23brandGrad_f18oi8)%22%20fill-rule%3D%22evenodd%22%20d%3D%22%0A%20%20%20%20%20%20%20%20%20%20M%20128%2036%20L%20216%20214%20L%20174%20214%20L%20150%20162%20L%20106%20162%20L%2082%20214%20L%2040%20214%20Z%0A%20%20%20%20%20%20%20%20%20%20M%20128%2088%20L%20140%20126%20L%20116%20126%20Z%0A%20%20%20%20%20%20%20%20%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%22128%2C36%20148%2C82%20108%2C82%22%20fill%3D%22url(%23brandGrad_f18oi8_accent)%22%2F%3E%0A%20%20%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- GSAP 3 & ScrollTrigger CDN pour fluidité d'élite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Google Fonts : Typographies d'Élite Unslop -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@1,600;1,800&family=Space+Grotesk:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F5F3ED;
+      color: #4B5563;
+      overflow-x: hidden;
+    }
+    .font-title-custom {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-mono-custom {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .luxury-glow {
+      box-shadow: 0 0 40px -5px rgba(46, 64, 54, 0.12);
+    }
+    .fine-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(46, 64, 54, 0.16) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(46, 64, 54, 0.16) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-400 selection:text-black">
+
+  <!-- ================= NAVBAR FLOTTANTE (ÎLE CENTRÉE) ================= -->
+  <header class="fixed top-4 inset-x-0 z-50 flex justify-center px-4">
+    <nav class="w-full max-w-5xl rounded-full px-6 py-3 flex items-center justify-between backdrop-blur-2xl shadow-xl transition-all duration-300" style="background: rgba(245, 243, 237, 0.92); border: 1px solid rgba(46, 64, 54, 0.16); color: #1E2B24;">
+      <div class="flex items-center space-x-3.5">
+        <!-- Logo Vectoriel Client Conçu par le Skill logo-design -->
+        <div class="w-10 h-10 flex items-center justify-center p-1.5 rounded-xl shadow-sm overflow-hidden" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+          <div class="w-full h-full flex items-center justify-center"><svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AWA BOTANICALS Symbol Transparent">
+  <title>AWA BOTANICALS — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_f18oi8" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#D4AF37"/>
+        <stop offset="50%" stop-color="#4A7C59"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_f18oi8_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#D4AF37"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+        <path fill="url(#brandGrad_f18oi8)" fill-rule="evenodd" d="
+          M 128 36 L 216 214 L 174 214 L 150 162 L 106 162 L 82 214 L 40 214 Z
+          M 128 88 L 140 126 L 116 126 Z
+        "/>
+        <polygon points="128,36 148,82 108,82" fill="url(#brandGrad_f18oi8_accent)"/>
+      
+  </g>
+</svg></div>
+        </div>
+        <span class="font-extrabold text-sm sm:text-base tracking-tight" style="color: #1E2B24;">Awa Botanicals</span>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-bold" style="color: #6B7280;">
+        <a href="#catalogue" class="hover:opacity-80 transition-opacity">Prestations</a>
+        <a href="#exigence" class="hover:opacity-80 transition-opacity">Exigence</a>
+        <a href="#avis" class="hover:opacity-80 transition-opacity">Témoignages</a>
+        <a href="#contact" class="hover:opacity-80 transition-opacity">Contact</a>
+      </div>
+
+      <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20commander." target="_blank" class="px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center space-x-2 hover:scale-[1.03] active:scale-95" style="background: #2E4036; color: #F5F3ED;">
+        <span>Commander</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ================= SECTION HERO (OUVERTURE CINÉMATIQUE SUR-MESURE) ================= -->
+  
+  <!-- HERO ASYMÉTRIQUE ÉDITORIAL (SPLIT-HERO AVEC CADRE PHOTO CINÉMATIQUE) -->
+  <section class="relative min-h-[92vh] flex items-center pt-28 pb-20 px-4 sm:px-8 max-w-7xl mx-auto overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+      <!-- Colonne Contenu (Gauche - 7 colonnes) -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left z-10">
+        <!-- Badge Sectoriel & Localisation -->
+        <div class="hero-anim inline-flex items-center space-x-2.5 px-4 py-2 rounded-full text-xs font-mono-custom font-bold uppercase tracking-wider mb-6 shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16); color: #2E4036;">
+          <span class="w-2 h-2 rounded-full animate-ping" style="background: #2E4036;"></span>
+          <span>🌿 100% Organique & Certifié Naturel</span>
+        </div>
+
+        <!-- Titre Monumental -->
+        <h1 class="hero-anim text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight uppercase leading-[1.06] mb-6" style="color: #1E2B24;">
+          Awa Botanicals
+          <span class="block font-title-custom italic font-normal text-3xl sm:text-5xl md:text-6xl mt-2 tracking-tight" style="color: #2E4036;">
+            La puissance brute des terres sénégalaises pour votre peau.
+          </span>
+        </h1>
+
+        <p class="hero-anim text-base sm:text-lg max-w-xl font-light leading-relaxed mb-8" style="color: #4B5563;">
+          Découvrez l'excellence du soin artisanal alliant la richesse du beurre de karité pur aux vertus régénératrices du baobab. Chaque produit est formulé avec passion au Sénégal pour révéler l'éclat naturel de votre beauté.
+        </p>
+
+        <!-- Boutons d'Action Principaux -->
+        <div class="hero-anim flex flex-col sm:flex-row items-center space-y-3.5 sm:space-y-0 sm:space-x-5 w-full sm:w-auto mb-10">
+          <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20commander." target="_blank" class="w-full sm:w-auto px-9 py-4 rounded-full font-bold text-sm uppercase tracking-wider transition-all shadow-xl flex items-center justify-center space-x-2.5 hover:scale-[1.03] luxury-glow active:scale-95" style="background: #2E4036; color: #F5F3ED;">
+            <span>Commander sur WhatsApp</span>
+            <span>💬</span>
+          </a>
+          <a href="#catalogue" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-sm transition-all border hover:shadow-md text-center" style="border-color: rgba(46, 64, 54, 0.16); color: #1E2B24; background: #FFFFFF;">
+            Voir le Catalogue ↓
+          </a>
+        </div>
+
+        <!-- Garanties Locales -->
+        <div class="hero-anim flex items-center space-x-6 text-xs font-mono-custom" style="color: #6B7280;">
+          <span class="flex items-center space-x-1.5">
+            <span class="font-bold" style="color: #2E4036;">✓</span>
+            <span>Paiement Wave &amp; OM</span>
+          </span>
+          <span class="flex items-center space-x-1.5">
+            <span class="font-bold" style="color: #2E4036;">✓</span>
+            <span>Dakar, Sénégal</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Colonne Visuelle Asymétrique (Droite - 5 colonnes) -->
+      <div class="lg:col-span-5 relative flex justify-center z-10 hero-anim">
+        <!-- Cadre Photo Haute Résolution -->
+        <div class="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl transition-transform duration-500 hover:scale-[1.02]" style="border: 2px solid rgba(46, 64, 54, 0.16);">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1400&q=85" alt="Awa Botanicals" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+          
+          <!-- Logo vectoriel flottant en filigrane en haut à droite -->
+          
+          <div class="absolute top-4 right-4 w-12 h-12 rounded-2xl backdrop-blur-md p-2 shadow-lg flex items-center justify-center" style="background: rgba(255, 255, 255, 0.9); border: 1px solid rgba(46, 64, 54, 0.16);">
+            <svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AWA BOTANICALS Symbol Transparent">
+  <title>AWA BOTANICALS — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_f18oi8" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#D4AF37"/>
+        <stop offset="50%" stop-color="#4A7C59"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_f18oi8_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#D4AF37"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+        <path fill="url(#brandGrad_f18oi8)" fill-rule="evenodd" d="
+          M 128 36 L 216 214 L 174 214 L 150 162 L 106 162 L 82 214 L 40 214 Z
+          M 128 88 L 140 126 L 116 126 Z
+        "/>
+        <polygon points="128,36 148,82 108,82" fill="url(#brandGrad_f18oi8_accent)"/>
+      
+  </g>
+</svg>
+          </div>
+
+          <!-- Carte Flottante de Réputation en bas de l'image -->
+          <div class="absolute bottom-5 inset-x-5 p-4 rounded-2xl backdrop-blur-xl shadow-2xl flex items-center justify-between" style="background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(46, 64, 54, 0.16);">
+            <div>
+              <div class="text-xs font-mono-custom font-bold" style="color: #2E4036;">★ 4.9/5</div>
+              <div class="text-sm font-bold tracking-tight" style="color: #1E2B24;">Formulation Végétale</div>
+              <div class="text-xs font-light" style="color: #6B7280;">Ingrédients purs du Sénégal</div>
+            </div>
+            <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background: #2E4036; color: #F5F3ED;">
+              ✓
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION CATALOGUE / OFFRES (AVEC VRAIES PHOTOS) ================= -->
+  <section id="catalogue" class="py-28 px-4 sm:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <div class="text-xs font-mono-custom font-bold uppercase tracking-widest mb-3" style="color: #2E4036;">SÉLECTION OFFICIELLE</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight" style="color: #1E2B24;">Nos Soins Signature</h2>
+      <p class="text-sm sm:text-base mt-3 max-w-xl mx-auto font-light" style="color: #6B7280;">Commandez directement sur WhatsApp en un seul clic.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="product-card group rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <!-- Image Produit / Service avec Zoom fluide au hover -->
+        <div class="relative w-full h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="Crème Fondante Karité & Karité Brut" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
+          <!-- Badge Prix Flottant en haut à droite -->
+          <span class="absolute top-3.5 right-3.5 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold backdrop-blur-md shadow-lg" style="background: #2E4036; color: #F5F3ED;">
+            8 500 FCFA
+          </span>
+        </div>
+
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="text-xl font-bold tracking-tight mb-2.5" style="color: #1E2B24;">Crème Fondante Karité & Karité Brut</h3>
+            <p class="text-sm mb-6 leading-relaxed font-light" style="color: #4B5563;">Une hydratation intense et profonde, idéale pour nourrir les peaux sèches avec la pureté du karité non raffiné.</p>
+          </div>
+          <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20commander%20:%20Cr%C3%A8me%20Fondante%20Karit%C3%A9%20%26%20Karit%C3%A9%20Brut%20(8%20500%20FCFA)" target="_blank" class="w-full py-3.5 rounded-2xl font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center space-x-2 transition-all shadow-md hover:scale-[1.02] active:scale-95" style="background: #2E4036; color: #F5F3ED;">
+            <span>Commander sur WhatsApp</span>
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="product-card group rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <!-- Image Produit / Service avec Zoom fluide au hover -->
+        <div class="relative w-full h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Sérum Éclat Huile de Baobab Pure" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
+          <!-- Badge Prix Flottant en haut à droite -->
+          <span class="absolute top-3.5 right-3.5 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold backdrop-blur-md shadow-lg" style="background: #2E4036; color: #F5F3ED;">
+            14 000 FCFA
+          </span>
+        </div>
+
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="text-xl font-bold tracking-tight mb-2.5" style="color: #1E2B24;">Sérum Éclat Huile de Baobab Pure</h3>
+            <p class="text-sm mb-6 leading-relaxed font-light" style="color: #4B5563;">Un concentré de vitamines pour revitaliser votre teint et redonner à votre peau toute sa luminosité naturelle.</p>
+          </div>
+          <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20commander%20:%20S%C3%A9rum%20%C3%89clat%20Huile%20de%20Baobab%20Pure%20(14%20000%20FCFA)" target="_blank" class="w-full py-3.5 rounded-2xl font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center space-x-2 transition-all shadow-md hover:scale-[1.02] active:scale-95" style="background: #2E4036; color: #F5F3ED;">
+            <span>Commander sur WhatsApp</span>
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="product-card group rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <!-- Image Produit / Service avec Zoom fluide au hover -->
+        <div class="relative w-full h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80" alt="Savon Noir Exfoliant Eucalyptus" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
+          <!-- Badge Prix Flottant en haut à droite -->
+          <span class="absolute top-3.5 right-3.5 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold backdrop-blur-md shadow-lg" style="background: #2E4036; color: #F5F3ED;">
+            4 500 FCFA
+          </span>
+        </div>
+
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="text-xl font-bold tracking-tight mb-2.5" style="color: #1E2B24;">Savon Noir Exfoliant Eucalyptus</h3>
+            <p class="text-sm mb-6 leading-relaxed font-light" style="color: #4B5563;">Un soin purifiant traditionnel enrichi à l'eucalyptus pour une exfoliation douce et une sensation de fraîcheur immédiate.</p>
+          </div>
+          <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20commander%20:%20Savon%20Noir%20Exfoliant%20Eucalyptus%20(4%20500%20FCFA)" target="_blank" class="w-full py-3.5 rounded-2xl font-bold text-xs uppercase tracking-wider text-center flex items-center justify-center space-x-2 transition-all shadow-md hover:scale-[1.02] active:scale-95" style="background: #2E4036; color: #F5F3ED;">
+            <span>Commander sur WhatsApp</span>
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ================= SECTION EXIGENCE & AVANTAGES ================= -->
+  <section id="exigence" class="py-24 px-4 sm:px-8 max-w-6xl mx-auto" style="border-top: 1px solid rgba(46, 64, 54, 0.16);">
+    <div class="text-center mb-16">
+      <div class="text-xs font-mono-custom font-bold uppercase tracking-widest mb-3" style="color: #2E4036;">NOTRE ENGAGEMENT</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight" style="color: #1E2B24;">L'Excellence Sans Compromis</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="feature-card p-8 rounded-3xl transition-transform hover:-translate-y-1 shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-bold text-base mb-6 shadow-sm" style="background: rgba(46, 64, 54, 0.08); color: #2E4036; border: 1px solid rgba(46, 64, 54, 0.16);">
+          01
+        </div>
+        <h3 class="text-xl font-bold mb-2 tracking-tight" style="color: #1E2B24;">100% Naturel</h3>
+        <p class="text-sm leading-relaxed font-light" style="color: #4B5563;">Zéro produit chimique, uniquement des ingrédients bio issus du terroir sénégalais.</p>
+      </div>
+    
+
+      <div class="feature-card p-8 rounded-3xl transition-transform hover:-translate-y-1 shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-bold text-base mb-6 shadow-sm" style="background: rgba(46, 64, 54, 0.08); color: #2E4036; border: 1px solid rgba(46, 64, 54, 0.16);">
+          02
+        </div>
+        <h3 class="text-xl font-bold mb-2 tracking-tight" style="color: #1E2B24;">Artisanat Local</h3>
+        <p class="text-sm leading-relaxed font-light" style="color: #4B5563;">Chaque soin est fabriqué à la main, garantissant une fraîcheur et une qualité exceptionnelle.</p>
+      </div>
+    
+
+      <div class="feature-card p-8 rounded-3xl transition-transform hover:-translate-y-1 shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-bold text-base mb-6 shadow-sm" style="background: rgba(46, 64, 54, 0.08); color: #2E4036; border: 1px solid rgba(46, 64, 54, 0.16);">
+          03
+        </div>
+        <h3 class="text-xl font-bold mb-2 tracking-tight" style="color: #1E2B24;">Paiement Simple</h3>
+        <p class="text-sm leading-relaxed font-light" style="color: #4B5563;">Commandez en un clic sur WhatsApp et réglez en toute sécurité avec Wave.</p>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ================= SECTION AVIS CLIENTS ================= -->
+  <section id="avis" class="py-24 px-4 sm:px-8 max-w-5xl mx-auto" style="border-top: 1px solid rgba(46, 64, 54, 0.16);">
+    <div class="text-center mb-16">
+      <div class="text-xs font-mono-custom font-bold uppercase tracking-widest mb-3" style="color: #2E4036;">TÉMOIGNAGES CLIENTS</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight" style="color: #1E2B24;">La Confiance de Nos Hôtes</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="testimonial-card p-8 rounded-3xl shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <div class="flex items-center space-x-1 mb-4 text-sm" style="color: #2E4036;">
+          ★★★★★
+        </div>
+        <p class="text-base italic mb-6 leading-relaxed font-light" style="color: #4B5563;">"Le sérum au baobab a radicalement changé l'éclat de mon visage. Je ne jure que par Awa Botanicals !"</p>
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background: #2E4036; color: #F5F3ED;">
+            F
+          </div>
+          <div>
+            <div class="font-bold text-sm" style="color: #1E2B24;">Fatou Diop</div>
+            <div class="text-xs" style="color: #6B7280;">Cliente Régulière</div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="testimonial-card p-8 rounded-3xl shadow-sm" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16);">
+        <div class="flex items-center space-x-1 mb-4 text-sm" style="color: #2E4036;">
+          ★★★★★
+        </div>
+        <p class="text-base italic mb-6 leading-relaxed font-light" style="color: #4B5563;">"Une qualité artisanale rare. Le savon noir à l'eucalyptus est un indispensable dans ma routine bien-être."</p>
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs" style="background: #2E4036; color: #F5F3ED;">
+            M
+          </div>
+          <div>
+            <div class="font-bold text-sm" style="color: #1E2B24;">Marie Sarr</div>
+            <div class="text-xs" style="color: #6B7280;">Professionnelle Dakar</div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ================= FOOTER STATUTAIRE ================= -->
+  <footer id="contact" class="py-20 px-4 text-center" style="background: #FFFFFF; border-top: 1px solid rgba(46, 64, 54, 0.16);">
+    <div class="max-w-4xl mx-auto">
+      <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center"><svg width="512" height="512" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AWA BOTANICALS Symbol Transparent">
+  <title>AWA BOTANICALS — Symbol Mark (Transparent)</title>
+  
+    <defs>
+      <linearGradient id="brandGrad_f18oi8" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#D4AF37"/>
+        <stop offset="50%" stop-color="#4A7C59"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <linearGradient id="brandGrad_f18oi8_accent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#D4AF37"/>
+      </linearGradient>
+    </defs>
+  
+  <g id="symbol-mark">
+    
+        <path fill="url(#brandGrad_f18oi8)" fill-rule="evenodd" d="
+          M 128 36 L 216 214 L 174 214 L 150 162 L 106 162 L 82 214 L 40 214 Z
+          M 128 88 L 140 126 L 116 126 Z
+        "/>
+        <polygon points="128,36 148,82 108,82" fill="url(#brandGrad_f18oi8_accent)"/>
+      
+  </g>
+</svg></div>
+      <h2 class="text-2xl sm:text-4xl font-extrabold mb-3 tracking-tight" style="color: #1E2B24;">Awa Botanicals</h2>
+      <p class="text-sm mb-2 font-light" style="color: #4B5563;">Dakar, Sénégal</p>
+      <p class="text-xs font-mono-custom mb-8" style="color: #2E4036;">Lundi - Samedi : 09h00 - 19h00 • Service Client : +221 77 869 05 84</p>
+      
+      <div class="mb-12">
+        <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20des%20informations." target="_blank" class="inline-flex items-center space-x-2.5 px-9 py-4 rounded-full font-bold text-sm shadow-xl hover:scale-[1.03] transition-all" style="background: #2E4036; color: #F5F3ED;">
+          <span>Ouvrir la discussion WhatsApp</span>
+          <span>💬</span>
+        </a>
+      </div>
+
+      <!-- Signature Agence Daro TECH -->
+      <div class="pt-8 text-xs font-mono-custom" style="border-top: 1px solid rgba(46, 64, 54, 0.16); color: #6B7280;">
+        Conçu selon les standards d'ingénierie d'élite de l'agence <a href="https://daro-tech.app" target="_blank" class="font-bold hover:underline" style="color: #2E4036;">Daro TECH</a> • Dakar (UTC+0)
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= BOUTON WHATSAPP FLOTTANT DYNAMIQUE (LOGO OFFICIEL & ANIMATION PING) ================= -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <!-- Bulle d'invitation tactile / Tooltip interactif -->
+    <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20commander." target="_blank" class="mr-3 px-4 py-2.5 rounded-full shadow-2xl text-xs font-bold transition-all duration-300 opacity-95 group-hover:opacity-100 group-hover:scale-105 hidden sm:flex items-center space-x-2.5" style="background: #FFFFFF; border: 1px solid rgba(46, 64, 54, 0.16); color: #1E2B24;">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span>Discuter &amp; Commander</span>
+    </a>
+
+    <!-- Bouton Circulaire WhatsApp avec Pulse & Véritable Logo SVG -->
+    <a href="https://wa.me/221778690584?text=Bonjour%20Awa%20Botanicals,%20je%20souhaite%20commander." target="_blank" class="relative w-16 h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95" title="Commander sur WhatsApp" aria-label="Commander sur WhatsApp">
+      <!-- Onde de diffusion animée (Ripple Ping) -->
+      <span class="absolute inset-0 rounded-full bg-emerald-400 opacity-40 animate-ping"></span>
+      <!-- Véritable Logo Vectoriel WhatsApp -->
+      <svg class="relative z-10 w-8 h-8 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.031 0C5.396 0 0 5.394 0 12.029c0 2.116.552 4.181 1.6 6L.073 24l6.155-1.503a11.97 11.97 0 005.803 1.5c6.635 0 12.03-5.394 12.03-12.029C24.061 5.394 18.666 0 12.031 0zm0 22.023c-1.848 0-3.664-.496-5.253-1.442l-.377-.225-3.896.953.953-3.8-.247-.393a9.96 9.96 0 01-1.533-5.087c0-5.502 4.478-9.98 9.98-9.98 5.503 0 9.98 4.478 9.98 9.98 0 5.502-4.477 9.98-9.98 9.98zm5.474-7.469c-.3-.15-1.775-.876-2.05-.975-.275-.1-.475-.15-.675.15s-.775.975-.95 1.175c-.175.2-.35.225-.65.075-.3-.15-1.266-.467-2.41-1.488-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.018-.462.132-.612.136-.135.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525s-.675-1.625-.925-2.225c-.244-.583-.492-.504-.675-.513-.175-.008-.375-.01-.575-.01s-.525.075-.8.375c-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.116 3.23 5.127 4.532.716.31 1.275.495 1.71.634.72.228 1.375.196 1.893.118.577-.087 1.775-.725 2.025-1.425.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- SCRIPT GSAP 3 & ANIMATIONS FLUIDES -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Entrée cinématique du Hero
+      gsap.from('.hero-anim', {
+        y: 40,
+        opacity: 0,
+        duration: 1.0,
+        stagger: 0.12,
+        ease: 'power3.out'
+      });
+
+      // Apparition progressive au scroll des cartes d'offres
+      gsap.from('.product-card', {
+        scrollTrigger: {
+          trigger: '#catalogue',
+          start: 'top 80%',
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: 'power2.out'
+      });
+
+      // Apparition des engagements
+      gsap.from('.feature-card', {
+        scrollTrigger: {
+          trigger: '#exigence',
+          start: 'top 80%',
+        },
+        y: 35,
+        opacity: 0,
+        duration: 0.7,
+        stagger: 0.1,
+        ease: 'power2.out'
+      });
+
+      // Morphing fluide de la navbar au scroll
+      const headerNav = document.querySelector('header nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+          headerNav.classList.add('shadow-2xl');
+        } else {
+          headerNav.classList.remove('shadow-2xl');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
